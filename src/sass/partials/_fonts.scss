@@ -15,45 +15,45 @@ h4, .h4 {
 
 // Font sizes for mediaqueries: font-size, margin-bottom
 $headers-small: ( 
-  h1: 2rem 3rem,
-  h2: 1.8rem 3rem,
-  h3: 1.6rem 3rem,
-  h4: 18 3rem,
-  h5: 17 3rem,
-  h6: 16 3rem
+  h1: 2rem 1rem,
+  h2: 1.8rem 1rem,
+  h3: 1.6rem 1rem,
+  h4: 18 1rem,
+  h5: 17 1rem,
+  h6: 16 1rem
 );
 
 $headers-medium: (
-  h1: 2rem 3rem,
-  h2: 1.8rem 3rem,
-  h3: 1.6rem 3rem,
-  h4: 18 3rem,
-  h5: 17 3rem,
-  h6: 16 3rem
+  h1: 2rem 1rem,
+  h2: 1.8rem 1rem,
+  h3: 1.6rem 1rem,
+  h4: 18 1rem,
+  h5: 17 1rem,
+  h6: 16 1rem
 );
 
 $headers-medium-up: (
-  h1: 2rem 3rem,
-  h2: 1.8rem 3rem,
-  h3: 1.6rem 3rem,
-  h4: 18 3rem,
-  h5: 17 3rem,
-  h6: 16 3rem
+  h1: 2rem 1rem,
+  h2: 1.8rem 1rem,
+  h3: 1.6rem 1rem,
+  h4: 18 1rem,
+  h5: 17 1rem,
+  h6: 16 1rem
 );
 
 $headers-large: (
-  h1: 2rem 3rem,
-  h2: 1.8rem 3rem,
-  h3: 1.6rem 3rem,
-  h4: 18 3rem,
-  h5: 17 3rem,
-  h6: 16 3rem
+  h1: 2rem 1rem,
+  h2: 1.8rem 1rem,
+  h3: 1.6rem 1rem,
+  h4: 18 1rem,
+  h5: 17 1rem,
+  h6: 16 1rem
 );
 
 $headers-large-up: (
   h1: 2rem 3rem,
-  h2: 1.2rem 1rem,
-  h3: 3rem 1rem,
+  h2: 1.4rem 3rem,
+  h3: 1rem 3rem,
   h4: 18 1rem,
   h5: 17 1rem,
   h6: 16 1rem
@@ -89,6 +89,5 @@ ul {
 
   li {
     margin: 10px 0;
-    cursor: pointer;
   }
 }

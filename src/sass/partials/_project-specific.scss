@@ -1,0 +1,40 @@
+// .c5:nth-child(odd) {
+//     background: $column-specific;
+// }
+
+.r.inside {
+    width: 100%;
+    background: $column-inside-specific;
+}
+
+.bg {
+    background: $column-specific;
+}
+
+.line {
+    border-right: 1px solid rgba(214, 214, 214, 0.233);
+}
+
+.hline {
+    border-bottom: 1px solid rgba(214, 214, 214, 0.233);
+    margin: 60px 0 60px 0;
+}
+
+.goals {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto; //horizontally center
+    padding: 30px 0; // padding: 20px 0;
+    background: $row-background-color;
+    height: auto;
+    width: 60%;
+}
+
+strong {
+    color: $title-color;
+}
+
+.balta {
+    color: white;
+}
