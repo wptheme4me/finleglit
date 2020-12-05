@@ -54,3 +54,21 @@ svg {
         fill: #4d4d4d;
     }
 }
+
+nav {
+    margin-bottom: 40px;
+    a {
+        display: inline-block;
+        margin: 0 20px 0 0;
+    } 
+}
+
+header nav {
+
+    margin: 0 0 63px 0;
+    padding: 0;
+    a {
+        display: inline-block;
+        margin: 0 0 0 20px;
+    } 
+}
