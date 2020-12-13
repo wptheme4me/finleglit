@@ -11,12 +11,32 @@
     background: $column-specific;
 }
 
+.ff {
+    background-image: url(/img/fonas.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.fr {
+    background-image: url(/img/fonas-virsus.svg);
+    background-repeat: no-repeat;
+    // background-size: 100% auto;
+    background-position: top right;
+}
+
+.fk {
+    background-image: url(/img/fonas-apacia-kaire.svg);
+    background-repeat: no-repeat;
+    background-size: auto 200%;
+    background-position: left bottom;
+}
+
 .line {
-    border-right: 1px solid rgba(214, 214, 214, 0.233);
+    border-right: 1px solid rgba(197, 197, 197, 0.658);
 }
 
 .hline {
-    border-bottom: 1px solid rgba(214, 214, 214, 0.233);
+    border-bottom: 1px solid rgba(214, 214, 214, 0.644);
     margin: 60px 0 60px 0;
 }
 
@@ -25,7 +45,7 @@
     box-sizing: border-box;
     display: block;
     margin: 0 auto; //horizontally center
-    padding: 30px 0; // padding: 20px 0;
+    // padding: 30px 0; // padding: 20px 0;
     background: $row-background-color;
     height: auto;
     width: 60%;
@@ -36,7 +56,12 @@ strong {
 }
 
 .balta {
-    color: white;
+    color: $title-color;
+    border-bottom: 4px solid #ffe875;
+
+    // &::after, &::before {
+    //     content: "--";
+    // }
 }
 
 svg {
@@ -51,7 +76,7 @@ svg {
     }
 
     svg {
-        fill: #4d4d4d;
+        fill: #183d79a2;
     }
 }
 
@@ -60,6 +85,11 @@ nav {
     a {
         display: inline-block;
         margin: 0 20px 0 0;
+        border-bottom: 1px solid $a-color;
+        
+        &:hover, &:focus {
+            border-bottom: 1px solid $a-hover-color;
+          }
     } 
 }
 
@@ -72,3 +102,4 @@ header nav {
         margin: 0 0 0 20px;
     } 
 }
+
