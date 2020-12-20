@@ -2,6 +2,9 @@
 //     background: $column-specific;
 // }
 
+//spalvos
+$pabraukimo-linijos-spalva:  #ffe875;
+
 .r.inside {
     width: 100%;
     background: $column-inside-specific;
@@ -37,8 +40,10 @@
 
 .hline {
     border-bottom: 1px solid rgba(214, 214, 214, 0.644);
-    margin: 60px 0 60px 0;
+    margin: 30px 0;
 }
+
+
 
 .goals {
     position: relative;
@@ -48,7 +53,7 @@
     // padding: 30px 0; // padding: 20px 0;
     background: $row-background-color;
     height: auto;
-    width: 60%;
+    width: 80%;
 }
 
 strong {
@@ -57,7 +62,7 @@ strong {
 
 .balta {
     color: $title-color;
-    border-bottom: 4px solid #ffe875;
+    border-bottom: 4px solid $pabraukimo-linijos-spalva;
 
     // &::after, &::before {
     //     content: "--";
@@ -86,11 +91,27 @@ nav {
         display: inline-block;
         margin: 0 20px 0 0;
         border-bottom: 1px solid $a-color;
-        
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+                
         &:hover, &:focus {
             border-bottom: 1px solid $a-hover-color;
           }
     } 
+}
+
+.up {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.project {
+    list-style-type: circle;
+}
+
+strong {
+    font-size: 1.2rem;
 }
 
 header nav {
@@ -103,3 +124,87 @@ header nav {
     } 
 }
 
+// timeline
+
+$container-shadow: 0.5rem 0.5rem 2rem 0 rgba(black, 0.2);
+
+$gutter: 28px;
+$border-width: 4px;
+$dot-diameter: 8px;
+
+.timeline {
+  width:70%;
+  max-width:800px;
+  padding: 100px 50px;
+  position: relative;
+//   box-shadow: $container-shadow;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left:calc(53% + 12px); //$gutter/2
+    bottom: 0px;
+    width: 10px;
+    background: $pabraukimo-linijos-spalva;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+}
+
+.entry {
+  clear: both;
+  text-align: left;
+  position: relative;
+  .title {
+    margin-bottom: .5em;
+    float: left;
+    width: 52%;
+    padding-right: $gutter;
+    text-align: right;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: $dot-diameter;
+      height: $dot-diameter;
+      border: $border-width solid salmon;
+      background-color:#fff;
+      border-radius:100%;
+      top: 15%;
+      right: -$dot-diameter;
+      z-index: 99;
+    }
+    h3 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      font-size: 100%;
+    }
+  }
+  .body {
+    margin: 0 0 5em;
+    float: right;
+    // width: 60%;
+    // padding-left: $gutter;
+    p {
+      line-height: 1.4em;
+      &:first-child {
+        margin-top: 0;
+        font-weight: 400;
+      }
+    }
+    ul {
+      color:#aaa;
+      padding-left: 0;
+      list-style-type: none;
+      li:before {
+        content: "–";
+        margin-right: .5em;
+      }
+    }
+  }
+}
