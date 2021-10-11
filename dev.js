@@ -16,7 +16,7 @@ var robots = require('metalsmith-robots')
 var config = require('./config')
 var clear_collections = require("./clear-collections"); //  metalsmith-collection dublication bug workaround
 
-var fs = require('fs');
+// var fs = require('fs');
 
 metalsmith(__dirname)
   .metadata({

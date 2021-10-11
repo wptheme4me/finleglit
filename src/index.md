@@ -1,4 +1,4 @@
 ---
 title: 'Financial-Legal Literacy for Europe'
-layout: default.pug
+layout: default-en.pug
 ---
