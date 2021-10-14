@@ -7,8 +7,7 @@
     "start": "npm run -s security-check && npm run -s dev",
     "dev": "node dev",
     "security-check": "nsp check",
-    "prod": "node index",
-    "preinstall": "npm "
+    "prod": "node index"
   },
   "keywords": [],
   "author": "",
@@ -29,8 +28,5 @@
   },
   "devDependencies": {
     "metalsmith-browser-sync": "^1.1.1"
-  },
-  "resolutions": {
-    "graceful-fs": "^4.2.4"
   }
 }
