@@ -9,6 +9,15 @@ $pabraukimo-linijos-spalva:  #ffe875;
     margin: 0 20px;
 }
 
+.flags:last-child {
+    margin: 0 0 0 20px;
+}
+
+.kalbos {
+    text-align: right;
+    margin-bottom: 8px;
+}
+
 .r.inside {
     width: 100%;
     background: $column-inside-specific;
